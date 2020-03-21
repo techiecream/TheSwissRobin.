@@ -574,6 +574,9 @@ del /s /q /f "C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\C
 del /s /q /f "C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\CLR_v4.0\UsageLogs\tzsync.exe.log"
 del /s /q /f "C:\Windows\SysWOW64\config\systemprofile\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs\NGenTask.exe.log"	
 del /s /q C:\users\%username%\AppData\Roaming\vlc\art\*.*
+defrag C: /U
+rmdir /s %systemdrive%\$Recycle.bin
+del /s /q %systemdrive%\$Recycle.bin
 ::[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run]
 ::[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce]
 ::[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices]
